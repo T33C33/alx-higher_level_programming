@@ -1,4 +1,8 @@
 #!/usr/bin/python3
+"""
+    A class reps a node in a list
+"""
+
 
 class Node:
     """
