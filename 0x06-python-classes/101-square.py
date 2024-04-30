@@ -1,4 +1,7 @@
 #!/usr/bin/python3
+"""
+    Module description
+"""
 
 class Square:
     def __init__(self, size=0, position=(0, 0)):
