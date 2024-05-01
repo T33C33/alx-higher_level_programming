@@ -3,6 +3,7 @@
     Module description
 """
 
+
 class Square:
     """Class square"""
     def __init__(self, size=0, position=(0, 0)):
@@ -38,7 +39,8 @@ class Square:
         return self._size ** 2
 
     def my_print(self):
-        """Prints the square with the character # and uses the position for spacing."""
+        """Prints the square with the character #
+        and uses the position for spacing."""
         if self.size == 0:
             print()
             return
