@@ -5,6 +5,6 @@ const text = [
 	'JavaScript is amazing'
 ];
 
-for (let i = 0; i < text.length; i++){
-	console.log(text[i]);
+for (const line of text) {
+  console.log(line);
 }
