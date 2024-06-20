@@ -4,7 +4,7 @@ const text = [
 	'Python is cool',
 	'JavaScript is amazing'
 ];
-let i;
-for (i = 0; i < text.length; i++){
+
+for (let i = 0; i < text.length; i++){
 	console.log(text[i]);
 }
