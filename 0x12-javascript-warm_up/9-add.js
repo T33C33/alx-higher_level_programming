@@ -1,14 +1,14 @@
-#!/usr/bin/node
+#!/urs/bin/node
 function add (a, b) {
   const first = parseFloat(a);
   const second = parseFloat(b);
-  const result = first + second;
 
-  if ((first === undefined || isNaN(first)) && (second === undefined || isNaN(second))) {
+  if (isNaN(first) || isNaN(second)) {
     console.log('NaN');
   } else {
+    const result = first + second;
     console.log(result);
   }
 }
-
-add(Number(process.argv[2]), Number(process.argv[3]));
+const args = process.argv;
+add(args[2], args[3]);
