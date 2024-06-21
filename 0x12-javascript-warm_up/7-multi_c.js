@@ -7,7 +7,7 @@ if (isNaN(x)) {
   return;
 }
 
-if (x <= 0) {
+else if (x <= 0) {
   return;
 }
 
