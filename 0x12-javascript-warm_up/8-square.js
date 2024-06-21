@@ -2,10 +2,10 @@
 const args = process.argv;
 const size = parseInt(args[2], 10);
 
-if (isNaN(size)) {
+if (process.argv[2] === undefined || isNaN(process.argv[2])) {
   console.log('Missing size');
-  return;
-}
-for (let i = 0; i < size; i++) {
-  console.log('X'.repeat(size));
+} else {
+  for (let i = 0; i < size; i++) {
+    console.log('X'.repeat(size));
+  }
 }
