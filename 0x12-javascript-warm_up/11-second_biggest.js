@@ -1,10 +1,18 @@
 #!/usr/bin/node
+
 const args = process.argv.slice(2);
-if ((args === undefined) || (process.argv.slice(2).length === 1)) {
+
+if (args.length < 2) {
   console.log(0);
 } else {
   const conv = args.map(Number);
   const uniqNum = Array.from(new Set(conv));
+
   uniqNum.sort((a, b) => b - a);
-  console.log(uniqNum[1]);
+
+  if (uniqNum.length < 2) {
+    console.log(0);
+  } else {
+    console.log(uniqNum[1]);
+  }
 }
