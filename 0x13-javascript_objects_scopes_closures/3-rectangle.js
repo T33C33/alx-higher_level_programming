@@ -11,7 +11,7 @@ class Rectangle {
     for (let i = 0; i < this.height; i++) {
       let matrix = '';
       for (let j = 0; j < this.width; j++) {
-        matrix += 'x';
+        matrix += 'X';
       }
       console.log(matrix);
     }
