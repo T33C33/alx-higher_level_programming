@@ -1,7 +1,7 @@
 #!/usr/bin/python3
+"""lists all states with a name starting with N (upper N)
 """
-lists all states with a name starting with N (upper N)
-"""
+
 
 if __name__ == "__main__":
     import MySQLdb
