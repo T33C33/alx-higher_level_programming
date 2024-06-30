@@ -1,14 +1,13 @@
 #!/usr/bin/python3
-"""Lists all states with a name starting with 'N' from the database hbtn_0e_0_usa."""
+"""
+Lists all states with a name starting with 'N'
+from the database hbtn_0e_0_usa.
+"""
 
 import MySQLdb
 import sys
 
 if __name__ == "__main__":
-    if len(sys.argv) != 5:
-        print("Usage: {} <username> <password> <database> <name_starts_with>".format(sys.argv[0]))
-        sys.exit(1)
-
     username = sys.argv[1]
     password = sys.argv[2]
     database = sys.argv[3]
@@ -29,4 +28,3 @@ if __name__ == "__main__":
         print(row)
     new_cursor.close()
     db.close()
-    
