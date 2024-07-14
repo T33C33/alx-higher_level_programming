@@ -4,6 +4,7 @@
 This module contains a function to find the peak element in a list of integers.
 """
 
+
 def find_peak(list_of_integers):
     """
     Find a peak element in a list of integers.
