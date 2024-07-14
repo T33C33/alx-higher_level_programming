@@ -1,6 +1,8 @@
-import sys
+"""
+This module retrieves the value of the 'X-Request-Id' header from a given URL.
+"""
 
-#!/usr/bin/python3
+import sys
 import urllib.request
 
 if __name__ == "__main__":
