@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 """
 This module retrieves the value of the 'X-Request-Id' header from a given URL.
 """
