@@ -14,15 +14,15 @@ uses the GitHub API to display your id
     You must use the package requests and sys
     You are not allowed to import packages
         other than requests and sys
-    You do not need to check arguments
+    You don’t need to check arguments
         passed to the script (number or type)
 """
 import requests
 import sys
 from requests.auth import HTTPBasicAuth
 if __name__ == "__main__":
-    username = T33C33
-    password = github.com0301
+    username = sys.argv[1]
+    password = sys.argv[2]
     url = "https://api.github.com/user"
     response = requests.get(url, auth=HTTPBasicAuth(username, password))
     data = response.json()
