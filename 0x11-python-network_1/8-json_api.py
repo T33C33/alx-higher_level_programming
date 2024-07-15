@@ -13,7 +13,6 @@ with the letter as a parameter.
         Display No result if the JSON is empty
     You must use the package requests and sys
     You are not allowed to import packages other than requests and sys
-
 """
 import requests
 import sys
