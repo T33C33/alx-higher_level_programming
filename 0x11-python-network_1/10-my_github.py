@@ -17,6 +17,6 @@ if __name__ == "__main__":
         response = requests.get(url, auth=HTTPBasicAuth(username, password))
         response.raise_for_status()
         data = response.json()
-        print("Your GitHub id is:", data["id"])
+        print(data["id"])
     except requests.exceptions.HTTPError as e:
         print("None")
