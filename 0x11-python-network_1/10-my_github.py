@@ -14,4 +14,3 @@ if __name__ == "__main__":
     response = requests.get(url, auth=HTTPBasicAuth(username, password))
     data = response.json()
     print("Your GitHub id is:", data["id"])
-    print("Your GitHub username is:", data["bio"])
