@@ -1,6 +1,6 @@
 #!/usr/bin/node
-// computes the number of tasks completed by user id
-const request = require('request');
+// number of tasks completed by user id
+const request = require("request");
 
 request.get(process.argv[2], { json: true }, (error, response, body) => {
   if (error) {
@@ -18,8 +18,5 @@ request.get(process.argv[2], { json: true }, (error, response, body) => {
       }
     }
   });
-
-  for (const userId in completedTasks) {
-    console.log(`${userId}: ${completedTasks[userId]}`);
-  }
+  console.log(completedTasks);
 });
