@@ -60,12 +60,12 @@ Traceback (most recent call last):
 ...
 TypeError: b must be an integer
 
->>> add_integer(float('NaN'), 1)
+>>> my_add_integer(float('NaN'), 1)
 Traceback (most recent call last):
 ...
 OverflowError: Cannot convert float '' to integer
 NaN
->>> add_integer(1, float('NaN'))
+>>> my_add_integer(1, float('NaN'))
 Traceback (most recent call last):
 ...
 OverflowError: Cannot convert float 'inf' to integer
