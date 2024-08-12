@@ -1,61 +1,71 @@
-A test to for adding two inteter
+A test to for adding two integers
 
 Import Python module + collections
 >>> import sys
 >>> sys.path.insert(1, '../')
->>> lib = __import__("0-add_integer")
->>> add_integer = lib.add_integer
+>>> my_lib = __import__("0-add_integer")
+>>> my_add_integer = my_lib.add_integer
 
 # Normal addition test
->>> add_integer(0)
+>>> my_add_integer(0)
 98
->>> add_integer(-1)
+>>> my_add_integer(-1)
 97
->>> add_integer(10.5)
+>>> my_add_integer(10.5)
 108
 
 # Type Errors
->>> add_integer(10+5j)
+>>> my_add_integer(10+5j)
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
->>> add_integer([])
+>>> my_add_integer([])
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
->>> add_integer({})
+>>> my_add_integer({})
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
->>> add_integer(set())
+>>> my_add_integer(set())
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
->>> add_integer("")
+>>> my_add_integer("")
 Traceback (most recent call last):
 ...
 TypeError: a must be an integer
 
 # Two input addition type errors
->>> add_integer(10, 10+5j)
+>>> my_add_integer(10, 10+5j)
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
->>> add_integer(10, [])
+>>> my_add_integer(10, [])
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
->>> add_integer(10, {})
+>>> my_add_integer(10, {})
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
->>> add_integer(10, set())
+>>> my_add_integer(10, set())
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
 
->>> add_integer(10, "")
+>>> my_add_integer(10, "")
 Traceback (most recent call last):
 ...
 TypeError: b must be an integer
+
+>>> add_integer(float('NaN'), 1)
+Traceback (most recent call last):
+...
+OverflowError: Cannot convert float '' to integer
+NaN
+>>> add_integer(1, float('NaN'))
+Traceback (most recent call last):
+...
+OverflowError: Cannot convert float 'inf' to integer
