@@ -11,7 +11,11 @@ Import Python module + collections
 >>> func(matrix, divisor)
 [[0.5, 1.0, 1.5], [2.0, 2.5, 3.0], [3.5, 4.0, 4.5]]
 
-
+# Test case 2: Dividing an empty matrix by an integer
+>>> matrix = []
+>>> divisor = 3
+>>> func(matrix, divisor)
+[]
 
 # Test case 3: Dividing a matrix by zero
 >>> matrix = [[1, 2], [3, 4]]
