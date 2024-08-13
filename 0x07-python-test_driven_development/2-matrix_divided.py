@@ -28,7 +28,7 @@ def matrix_divided(matrix, div):
                 raise TypeError("matrix must be a matrix \
                     (list of lists) of integers/floats")
             if div < 0:
-                new_lst.append(round((element * -1) / ((div) * -1), 2))
+                new_lst.append((round(element / (div * (-1)), 2)) * (-1))
             else:
                 new_lst.append(round(element / div, 2))
                 return new_lst
