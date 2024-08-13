@@ -6,7 +6,7 @@ Import Python module + collections
 >>> my_lib = __import__("0-add_integer")
 >>> my_add_integer = my_lib.add_integer
 
-# Normal addition test
+# Normal addition testsys.
 >>> my_add_integer(0)
 98
 >>> my_add_integer(-1)
