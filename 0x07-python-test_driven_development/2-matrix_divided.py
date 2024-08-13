@@ -23,7 +23,9 @@ def matrix_divided(matrix, div):
         raise TypeError("Each row of the matrix must have the same size")
     for row in matrix:
         for element in row:
-            new_lst = [
-                [round(element / div, 2) for element in row]
-                for row in matrix]
+            new_lst = []
+            if type(element) not in [int, float]:
+                raise TypeError("matrix must be a matrix (list of lists) of integers/floats")
+            else:
+                new_lst.append(round(element / div, 2))
             return new_lst
